@@ -1,0 +1,26 @@
+.post{
+    border: 2px solid brown;
+    background-color: #ffccff;
+    width: 959px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:19px;
+}
+.aviBox {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.blogName{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 30px;
+    color: green; /*olive green:#556B2F*/ 
+    font-weight: 900;
+    margin-left: 5px;
+}
+.blogText{
+    margin-left: 5px;
+}
