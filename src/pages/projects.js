@@ -3,8 +3,10 @@ import React, {Component} from 'react';
 class projects extends Component {
     render(){
         return(
-            <div>
-                <h1>projects</h1>
+            <div className="project">
+            
+                <p className="blogText">{this.props.msg}</p>
+                <p className="blogTime">{this.props.time}</p>
             </div>
         );
     }

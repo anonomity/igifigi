@@ -20,7 +20,15 @@
     color: green; /*olive green:#556B2F*/ 
     font-weight: 900;
     margin-left: 5px;
+    text-decoration:underline;
 }
 .blogText{
     margin-left: 5px;
+    font-size: 20px;
+    font-family: vantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+.blogTime{
+    margin-left: 5px;
+    font-size: 15px;
+    
 }

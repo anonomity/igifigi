@@ -1,0 +1,19 @@
+.post{
+    border: 2px solid brown;
+    background-color: #ffccff;
+    width: 959px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:19px;
+
+}
+.inputs{
+    width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}

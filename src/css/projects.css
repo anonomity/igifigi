@@ -1,0 +1,10 @@
+.projectMain{
+    border: 2px solid rgb(0, 255, 128);
+    background-color: #95e6ff;
+    width: 959px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:19px;
+}
