@@ -9,12 +9,27 @@ class blog extends Component {
         msg: "Type message",
         time: "Type the current time (HH:MM DD.MM.YYYY)",
     }
-    saveBlog = () => {
+    resetBlog = () => {
         this.setState({
-            name: "Ignacy",
-            msg: "GHGHhg",
-            time: "07:82 54.78.9999",
+            name: "Type your name",
+            msg: "Type message",
+            time: "Type the current time (HH:MM DD.MM.YYYY)",
         })
+    }
+    changeNameState = (event) => {
+        this.setState({
+            name : event.target.value
+        })
+    }
+    changeMsgState = (event) => {
+        this.setState({
+            msg : event.target.value
+        })  
+    }
+    changeTimeState = (event) => {
+        this.setState({
+            time : event.target.value
+        })  
     }
 
     render(){
@@ -49,10 +64,10 @@ class blog extends Component {
                 <BlogPost name="Julia" msg="i like billie eyelash" time="16:00 24.33.2020"/>
                 <BlogPost name={this.state.name} msg={this.state.msg} time={this.state.time}/>
                 <div className="post">
-                <input className="inputs"></input>
-                <input className="inputs"></input>
-                <input className="inputs"></input>
-                <button onClick={this.saveBlog} className="inputs">SAVE</button>
+                <input className="inputs" type="sumbit" value = {this.state.name} onChange = {this.changeNameState}></input>
+                <input className="inputs" type="sumbit" value = {this.state.msg} onChange = {this.changeMsgState}></input>
+                <input className="inputs" type="sumbit" value = {this.state.time} onChange = {this.changeTimeState}></input>
+                <button onClick={this.resetBlog} className="inputs">RESET</button>
             </div>
                 
             </div>

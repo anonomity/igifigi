@@ -7,4 +7,29 @@
     margin-left: auto;
     margin-right:auto;
     margin-top:19px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.projectImg{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 19px;
+}
+.projectPost{
+    margin-top:19px;
+    
+}
+.projectLink{
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 29px;
+}
+.projectName{
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 35px;
+    text-decoration:underline;
 }
