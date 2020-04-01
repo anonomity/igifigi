@@ -17,19 +17,32 @@ class blog extends Component {
       },
       {
         id: 2,
-        name: "Ig",
-        msg: "dsafasdf",
-        time: "asdfa"
+        name: "Jackie",
+        msg: "plz no C#",
+        time: "10/56*89-98"
+      },
+      {
+        id: 3,
+        name: "Janka",
+        msg: "dnmskafhwsejkfhkawsehfbasehnfjksehfjSDH;fASWEdhqwuirhWUIOHuig new, PREETY HORSE!",
+        time: "14:09 12.09.2020"
       }
     ],
     isRendered: false
   };
-  resetBlog = () => {
+  
+  postBlog = () => {
+    const whatever = [
+      ...this.state.posting
+    ];
+    whatever.push({
+      name: this.state.name,
+      msg: this.state.msg,
+      time: this.state.time
+    })
     this.setState({
-      name: "Type your name",
-      msg: "Type message",
-      time: "Type the current time (HH:MM DD.MM.YYYY)"
-    });
+      posting: whatever
+    })
   };
   changeNameState = event => {
     this.setState({
@@ -53,17 +66,16 @@ class blog extends Component {
     });
   };
   render() {
-    let Bposts = null;
-    if (this.state.isRendered) {
-      Bposts = this.state.posting.map(post => {
-        return <BlogPost name={post.name} msg={post.msg} time={post.time} />;
-      });
-    }
+    
+    let Bposts = this.state.posting.map(post => {
+      return <BlogPost name={post.name} msg={post.msg} time={post.time} />;
+    });
+    
 
     return (
       <div style={{ marginTop: "100px" }}>
         {Bposts}
-        <button onClick={this.renderIt} style={{marginLeft: "auto", marginRight:"auto", display: "block"}}>CLICK ME</button>
+        {/* <button onClick={this.renderIt} style={{marginLeft: "auto", marginRight:"auto", display: "block"}}>CLICK ME</button> */}
         <div className="post">
           
           
@@ -85,8 +97,8 @@ class blog extends Component {
             value={this.state.time}
             onChange={this.changeTimeState}
           ></input>
-          <button onClick={this.resetBlog} className="inputs">
-            RESET
+          <button onClick={this.postBlog} className="inputs">
+            POST
           </button>
         </div>
       </div>
